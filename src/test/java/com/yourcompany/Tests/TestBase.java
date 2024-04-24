@@ -1,6 +1,6 @@
 package com.yourcompany.Tests;
 
-import com.saucelabs.common.SauceOnDemandAuthentication;
+//import com.saucelabs.common.SauceOnDemandAuthentication;
 
 import org.junit.*;
 import org.junit.rules.TestName;
@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.saucelabs.junit.ConcurrentParameterized;
-import com.saucelabs.junit.SauceOnDemandTestWatcher;
+//import com.saucelabs.junit.SauceOnDemandTestWatcher;
 
 import java.net.URL;
 import java.util.LinkedList;
@@ -40,13 +40,13 @@ public class TestBase implements SauceOnDemandSessionIdProvider {
      * Constructs a {@link SauceOnDemandAuthentication} instance using the supplied user name/access key.  To use the authentication
      * supplied by environment variables or from an external file, use the no-arg {@link SauceOnDemandAuthentication} constructor.
      */
-    public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(username, accesskey);
+    //public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(username, accesskey);
 
     /**
      * JUnit Rule which will mark the Sauce Job as passed/failed when the test succeeds or fails.
      */
     @Rule
-    public SauceOnDemandTestWatcher resultReportingTestWatcher = new SauceOnDemandTestWatcher(this, authentication);
+    //public SauceOnDemandTestWatcher resultReportingTestWatcher = new SauceOnDemandTestWatcher(this, authentication);
 
     @Rule
     public TestName name = new TestName() {
