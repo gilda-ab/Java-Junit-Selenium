@@ -45,7 +45,7 @@ public class TestBase implements SauceOnDemandSessionIdProvider {
     /**
      * JUnit Rule which will mark the Sauce Job as passed/failed when the test succeeds or fails.
      */
-    @Rule
+    //@Rule
     //public SauceOnDemandTestWatcher resultReportingTestWatcher = new SauceOnDemandTestWatcher(this, authentication);
 
     @Rule
